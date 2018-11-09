@@ -1,0 +1,7 @@
+[package]
+name = "vaebot"
+version = "0.1.0"
+authors = ["ejcoyle88 <ejcoyle88@users.noreply.github.com>"]
+
+[dependencies]
+irc = "0.13"
