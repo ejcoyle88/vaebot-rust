@@ -29,7 +29,7 @@ fn main() {
 
         println!("{}", msg.to_string());
 
-        for cmd in cmds {
+        for cmd in cmds.iter() {
             if cmd.should_handle_message(&message) {
                 cmd.handle_message(&message);
             }
