@@ -23,3 +23,10 @@ pub fn join(message: &vaebot_message::VaebotMessage, channel_name: &str) {
         _ => ()
     }
 }
+
+pub fn leave(message: &vaebot_message::VaebotMessage, channel_name: &str) {
+    match message.client().send_part(channel_name) {
+        Err(e) => println!("{}", e),
+        _ => ()
+    }
+}
